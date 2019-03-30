@@ -1,7 +1,7 @@
 ############################################################
 # Simple but Cute and Helpful (TM) Bash Settings
 #
-# cat feedback >> "kirtika.ruchandani@gmail.com"
+# cat feedback >> "bapijun@gmail.com"
 ############################################################
 
 #!/usr/bin/env bash
@@ -12,8 +12,8 @@
 
 # User Info
 
-export USERNAME="Kirtika Ruchandani"
-export NICKNAME="rkirti"
+export USERNAME="bapijun"
+export NICKNAME="bapijun"
 
 # Distribute bashrc into smaller, more specific files
 
@@ -34,8 +34,9 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
 
-# User specific aliases and functions
+
+# Add z.sh fro automatic jump
+# Maintains a jump-list of the directories you actually use
+# https://github.com/rupa/z/blob/master/z.sh
 . ~/.shells/z.sh
