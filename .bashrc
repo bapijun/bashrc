@@ -15,6 +15,11 @@
 export USERNAME="bapijun"
 export NICKNAME="bapijun"
 
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
 # Distribute bashrc into smaller, more specific files
 
 source ~/.shells/defaults
@@ -29,10 +34,7 @@ echo
 echo "Hardware Information:"
 free -m # .bashrc
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
+
 
 
 

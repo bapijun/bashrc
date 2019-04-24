@@ -48,12 +48,3 @@ shopt -s cdspell
 #include dotfiles in wildcard expansion, and match case-insensitively
 shopt -s dotglob
 shopt -s nocaseglob
-
-
-############## SYSTEM ################
-
-export PATH=$PATH:/usr/games/
-
-
-
-
