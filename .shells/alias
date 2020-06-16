@@ -8,6 +8,7 @@ alias se='sudo gvim'
 alias e='gvim'
 alias smi='sudo make install'
 alias l='ls -CF'
+alias ls='-alF'
 
 # Cool colors for man pages
 alias man="TERMINFO=~/.terminfo TERM=mostlike LESS=C PAGER=less man"
