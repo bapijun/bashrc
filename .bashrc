@@ -12,8 +12,8 @@
 
 # User Info
 
-export USERNAME="bapijun"
-export NICKNAME="bapijun"
+export USERNAME="wujun"
+export NICKNAME="wujun"
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
