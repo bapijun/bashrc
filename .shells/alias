@@ -48,3 +48,5 @@ alias scope='cscope -CR -p10'
 
 # Quickly load bashrc
 alias gogo='source ~/.bashrc'
+# python alias
+alias py='python3'
