@@ -8,9 +8,10 @@ alias se='sudo gvim'
 alias e='gvim'
 alias smi='sudo make install'
 alias l='ls -CF'
-
-# Cool colors for man pages
-alias man="TERMINFO=~/.terminfo TERM=mostlike LESS=C PAGER=less man"
+# Limit the number of sending package
+alias ping='ping -c 4'
+# send sigkill to the process
+alias killp="kill -s 9"
 
 # Enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
