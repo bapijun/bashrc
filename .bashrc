@@ -12,8 +12,13 @@
 
 # User Info
 
-export USERNAME="bapijun"
-export NICKNAME="bapijun"
+export USERNAME="wujun"
+export NICKNAME="wujun"
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
 
 # Distribute bashrc into smaller, more specific files
 
@@ -29,10 +34,7 @@ echo
 echo "Hardware Information:"
 free -m # .bashrc
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
+
 
 
 

@@ -1,6 +1,6 @@
 # Cute shell shortcuts
 alias ls='ls --sort=extension --color=auto'
-alias ll='ls -lh'
+alias ll='ls -alF'
 alias la='ls -alh'
 alias pms='sudo pm-suspend'
 alias psg='ps -A | grep'
@@ -49,3 +49,5 @@ alias scope='cscope -CR -p10'
 
 # Quickly load bashrc
 alias gogo='source ~/.bashrc'
+# python alias
+alias py='python3'
