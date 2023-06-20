@@ -20,7 +20,8 @@ export PATH=/stuff/bitbake/bin:$PATH
 #export http_proxy='127.0.0.1:5050'
 #export https_proxy='127.0.0.1:5050'
 #export ftp_proxy='127.0.0.1:5050'
-export http_proxy=
-export https_proxy=
-export ftp_proxy=
+# clash proxy ususual use port 7890
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
+export all_proxy=socks5://127.0.0.1:7890
 
