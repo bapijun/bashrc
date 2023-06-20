@@ -51,3 +51,5 @@ alias scope='cscope -CR -p10'
 alias gogo='source ~/.bashrc'
 # python alias
 alias py='python3'
+#nvidia-docker alias
+alias ndocker='nvidia-docker'
