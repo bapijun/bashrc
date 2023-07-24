@@ -77,8 +77,27 @@ function parse_git_dirty {
 function parse_git_branch {
 git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
 }
+
 ## docker执行对应的参数
 function dockere()
 {
     docker exec -i -t $1 /bin/bash
+}
+
+## docker start and attach
+function dockersa()
+{
+    docker start $1 && nvidia-docker attach $1
+}
+
+## docker执行对应的参数
+function ndockere()
+{
+    nvidia-docker exec -i -t $1 /bin/bash
+}
+
+## docker start and attach
+function ndockersa()
+{
+    nvidia-docker start $1 && nvidia-docker attach $1
 }

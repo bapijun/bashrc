@@ -26,3 +26,13 @@ export all_proxy=socks5://127.0.0.1:7890
 
 #cuda
 export PATH=/usr/local/cuda-12.0/bin:$PATH
+
+#cli color 
+# Shell
+
+export CLICOLOR="1"
+
+YELLOW="\[\033[1;33m\]"
+NO_COLOUR="\[\033[0m\]"
+GREEN="\[\033[1;32m\]"
+WHITE="\[\033[1;37m\]"
