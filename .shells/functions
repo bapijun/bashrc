@@ -101,3 +101,15 @@ function ndockersa()
 {
     nvidia-docker start $1 && nvidia-docker attach $1
 }
+
+## tar gz
+function untargz()
+{
+    tar -zxf  $1 
+}
+
+## tar gz 解压缩
+function targz()
+{
+    tar -zcf  $1 $1
+}
