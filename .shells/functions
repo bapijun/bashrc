@@ -113,3 +113,17 @@ function targz()
 {
     tar -zcf  $1 $1
 }
+
+function proxy() {
+    systemctl restart clash
+    export http_proxy=http://127.0.0.1:7890
+    export https_proxy=$http_proxy
+    export all_proxy=socks5://127.0.0.1:7890
+    echo -e "proxy on!"
+}
+function unproxy(){ 
+    systemctl stop clash
+    unset http_proxy https_proxy
+    unset all_proxy
+    echo -e "proxy off"
+}
