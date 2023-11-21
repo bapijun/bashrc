@@ -111,7 +111,7 @@ function untargz()
 ## tar gz 解压缩
 function targz()
 {
-    tar -zcf  $1 $1
+    tar -zcf  $1 $2
 }
 
 function proxy() {
