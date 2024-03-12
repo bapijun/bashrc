@@ -43,11 +43,11 @@ PROMPT_COMMAND=pre_prompt
 case "$TERM" in
 xterm)
     PS1="$bblue┌─($orange\u@\h \$(date \"+%a, %d %b %y\")$bblue)─\${fill}─($orange\$newPWD\
-        $bblue)─┐\n$bblue└─($orange\$(date \"+%H:%M\") $(parse_git_branch) \$$bblue)─>$white "
+        $bblue)─┐\n$bblue└─($orange\$(date \"+%H:%M\") $(parse_git_branch) \$$bblue)─>$coldblue "
     ;;
 screen)
     PS1="$bblue┌─($orange\u@\h \$(date \"+%a, %d %b %y\")$bblue)─\${fill}─($orange\$newPWD\
-$bblue)─┐\n$bblue└─($orange\$(date \"+%H:%M\") \$$bblue)─>$white "
+$bblue)─┐\n$bblue└─($orange\$(date \"+%H:%M\") \$$bblue)─>$coldblue "
     ;;    
     *)
     PS1="┌─(\u@\h \$(date \"+%a, %d %b %y\"))─\${fill}─(\$newPWD\
