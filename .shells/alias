@@ -53,3 +53,4 @@ alias gogo='source ~/.bashrc'
 alias py='python3'
 #nvidia-docker alias
 alias ndocker='nvidia-docker'
+alias nvidia-smi='nvs'
