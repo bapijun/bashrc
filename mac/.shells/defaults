@@ -1,0 +1,43 @@
+############## HISTORY OPTIONS ################
+
+# Don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# Append to the history file, don't overwrite it
+setopt histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=100000
+HISTFILESIZE=2000000
+
+# Save and reload history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+setopt histappend
+
+############## GENERAL UI ################
+force_color_prompt=yes
+
+# Vim key-bindings
+set -o vi
+
+
+
+# Make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+
+# Enable programmable completion features
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
+
+############## INPUT ################
+
+# correct minor spelling errors in cd
+setopt CORRECT  # 仅纠正命令名
+#include dotfiles in wildcard expansion, and match case-insensitively
+setopt dotglob
+setopt nocaseglob
